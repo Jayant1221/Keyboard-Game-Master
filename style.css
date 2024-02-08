@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 53, 53);
+    margin:0px;
+    padding:0px;
+}
+.heading-cont{
+    width:100%;
+    height:100px;
+    /* background-color: #f1f1f1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* font-size: 30px; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+}
+.heading-cont h3{
+    margin:0px;
+    padding:0px;
+}
+.keyboard{
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
+    margin: 0px auto;
+    background-color: #f1f1f1;
+    background-color: #888;
+    /* background: linear-gradient(45deg,coral, #f85f5f, #fedf79); */
+}
+.keyboard > div{
+    margin: 0.1rem 0rem;
+    width: 100%;
+    height: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0.2rem;
+    /* border: 1px solid #f1f1f1; */
+    /* flex-direction: column; */
+}
+.keyboard > div > div{
+    /* border-radius: 5px; */
+    background: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #888;
+    font-size: 15px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    /* color: aliceblue; */
+    cursor: pointer;
+    margin: 0rem 0.1rem;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+.shift{
+    padding: 0px 3rem;
+}
+#enter, #caps-lock{
+    padding: 0px 2rem;
+}
+#tab,#backspace{
+    padding: 0px 1rem;
+}
+/* #esc,#tab,#caps-lock,#shift{
+    background-color: rgb(177, 0, 0);
+    color: white;
+} */
+
+.active-key{
+    background: rgb(177, 0, 0) !important;
+    color: white;
+}
+.alertbox{
+    display: none;
+}
+.alert-show{
+    display: block;
+    width:80%;
+    height:50px;
+    margin:0px auto;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.show-wrong{
+    animation: 2s wrong-animation 1;
+}
+@keyframes wrong-animation{
+    50%{
+    transform: translateY(10px);
+    opacity: 0.5;
+}
+}
